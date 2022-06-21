@@ -11,3 +11,4 @@ Mostly it's finished, but physics are too jittery and unstable<br>
 just in case, <br>
 there is little demo in the release folder, it requires font.png<br>
 (press left and right mouse buttons for draging object)
+<img src='demo.gif' />
