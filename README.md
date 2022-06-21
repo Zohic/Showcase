@@ -6,3 +6,4 @@ SFML/Audio - used for playing sounds<br>
 just in case,<br>
 there is executable in the release folder(it requires all file from the folder),<br>
 WASD - for movement, hold F + mouse - to look around<br>
+<img src='demo.gif'/>
