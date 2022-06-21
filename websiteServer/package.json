@@ -1,0 +1,30 @@
+{
+  "name": "autosale",
+  "version": "1.0.0",
+  "description": "WebSizeForCollege",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --presets es2015,stage-2,react"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "nodemailer": "^6.7.5",
+    "path": "^0.12.7",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sequelize": "^6.20.0",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^2.0.16"
+  },
+  "presets": [
+    "@babel/preset-react"
+  ]
+}

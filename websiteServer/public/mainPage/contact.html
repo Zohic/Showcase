@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>JMK</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+    <div class="hero_area">
+        <!-- header section strats -->
+        <%- include('header.html') -%>
+        <!-- end header section -->
+    </div>
+
+    <section class="contact_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Где нас найти
+                </h2>
+            </div>
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/62/krasnoyarsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Красноярск</a><a href="https://yandex.ru/maps/62/krasnoyarsk/?ll=93.036412%2C55.997532&mode=routes&rtext=55.998306%2C93.031747~55.997532%2C93.036412&rtt=mt&ruri=ymapsbm1%3A%2F%2Ftransit%2Fstop%3Fid%3Dstop__9902077~ymapsbm1%3A%2F%2Fgeo%3Fll%3D93.036%252C55.998%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259A%25D1%2580%25D0%25B0%25D1%2581%25D0%25BD%25D0%25BE%25D1%258F%25D1%2580%25D1%2581%25D0%25BA%252C%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%2520%25D0%25A8%25D0%25B5%25D0%25B2%25D1%2587%25D0%25B5%25D0%25BD%25D0%25BA%25D0%25BE%252C%252084&utm_medium=mapframe&utm_source=maps&z=16.64" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUJJOaFOD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Контакты
+                </h2>
+            </div>
+            <h4><%=about.place %></h4>
+            <h4><%=about.phone %></h4>
+            <h4><%=about.email %></h4>
+        </div>
+
+    </section>
+
+    <!-- end contact section -->
+    <!-- info section -->
+    <%- include('footer.html') -%>
+
+    <!-- end info_section -->
+    <!-- footer section -->
+    
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

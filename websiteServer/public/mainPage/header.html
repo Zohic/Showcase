@@ -1,0 +1,65 @@
+
+<div class="top_nav">
+    <div class="container">
+        <div class="contact_link-container">
+            <a href="" class="contact_link1">
+                <img src="images/location.png" alt="" />
+                <span>
+                    <%=about.place %>
+                </span>
+            </a>
+            <a href="" class="contact_link2">
+                <img src="images/call.png" alt="" />
+                <span>
+                    Звоните : <%=about.phone %>
+                </span>
+            </a>
+            <a href="" class="contact_link3">
+                <img src="images/mail.png" alt="" />
+                <span>
+                    <%=about.email %>
+                </span>
+            </a>
+
+            <div>
+                <a href="/adminOffice"><img style="height: 2rem"src="/images/admin_icon.png" /></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<header class="header_section">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="" />
+                <span>
+                    ProAuto
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <% var active = [(page=='index.html')?'active':' ', (page=='about.html')?'active':' ', (page=='service.html')?'active':' ' , page=='contact.html'?'active':' '] %>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item <%=active[0]%>">
+                        <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item <%=active[1]%>">
+                        <a class="nav-link" href="about.html"> О нас</a>
+                    </li>
+                    <li class="nav-item <%=active[2]%>">
+                        <a class="nav-link" href="service.html"> Услуги </a>
+                    </li>
+                    <li class="nav-item <%=active[3]%>">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+    </div>
+</header>

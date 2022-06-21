@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>JMK</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+    <div class="hero_area">
+        <!-- header section strats -->
+        <div id="headerImport"></div>
+        <%- include('header.html') -%>
+        <!-- end header section -->
+    </div>
+
+    <!-- service section -->
+
+    <section class="service_section layout_padding-top">
+        <div class="container">
+
+            <div id="service_sections">
+
+                <%for (let i = 0; i < ServicesInfo.ServiceSection.length; i++) { %>
+                <div class="service_section">
+                    <div class="heading_container">
+                        <h2>
+                            <%=ServicesInfo.ServiceSection[i]%>
+                        </h2>
+                    </div>
+                    <div class="service_container">
+                        <% for (let j = 0; j < ServicesInfo.ServiceType.length; j++) { %>
+
+                        <% if (ServicesInfo.ServiceType[j].service_section_id == i) { %>
+
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="images/services/<%=ServicesInfo.ServiceType[j].ascii_name %>.jpg" />
+                            </div>
+                            <div class="detail-box">
+                                <h6><%=ServicesInfo.ServiceType[j].service_name %></h6>
+                                <p><%=ServicesInfo.ServiceType[j].short_desc %></p>
+                                <a onclick="MakeOrder(<%=ServicesInfo.ServiceType[j].variation_id%>)"><%=ServicesInfo.ServiceType[j].price %> руб</a>
+                            </div>
+                        </div>
+                        <% } %>
+                        <% } %>
+                    </div>
+
+
+
+                </div>
+                <% } %>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+    <div class="form-popup" id="myForm">
+        <form id="orderForm" class="form-container">
+
+            <div>
+                <h1>Выбранный сервис:</h1>
+                <label id="selectedLabel"><b>Не удалось загрузить</b></label>
+                <img id="selectedImage" style="width:13.3rem;" />
+            </div>
+            <h1>Укажите данные заказчика</h1>
+            <div>
+                <label for="email"><b>Почта</b></label>
+                <input type="text" placeholder="Введите почту" name="email" required>
+            </div>
+            <div>
+                <label for="phone"><b>Номер телефона</b></label>
+                <input type="text" placeholder="Введите номер телефона" name="phone" required>
+            </div>
+            <div>
+                <label for="name"><b>Имя</b></label>
+                <input type="text" placeholder="Как к вам обращаться" name="name" required>
+            </div>
+
+
+                    <button type="submit" class="btn">Отправить</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Отмена</button>
+</form>
+    </div>
+
+    <script type="text/javascript" src="/scripts/ProAutoAPI.js"></script>
+    <script type="text/javascript" src="js/service.js"> </script>
+
+
+
+
+    <!-- end service section -->
+    <!-- info section -->
+    <div id="footerImport"></div>
+    <!-- end info -->
+    <%- include('footer.html') -%>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

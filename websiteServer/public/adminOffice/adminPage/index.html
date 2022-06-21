@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html  class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProAuto|admin</title>
+    <link rel="stylesheet" href="adminStyle.css">
+
+</head>
+<body>
+	<header>
+		<div id="header">
+
+			<div id="mobileMenuToggle" title="Menu"></div>
+			<a href="/" id="mobileLogo">ProAuto</a>
+			<div id="headerLeft">
+				<div id="menuToggle">&equiv;</div>
+			</div>
+			<div id="headerRight">
+			</div>
+		</div>
+	</header>
+	<div id="wrapall">
+
+		<a id="logo">ProAuto администрация</a>
+		<div id="main">
+			<div id="orders-section" class="top-section">
+				<div id="status-select" class="cant-select">
+					<p onclick="SetStatus(0)">Не подтверждён</p>
+					<p onclick="SetStatus(1)">В очереди</p>
+					<p onclick="SetStatus(2)">В обработке</p>
+					<p onclick="SetStatus(3)">Готов</p>
+				</div>
+				<div id="orders-list" class="list">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/scripts/ProAutoAPI.js"></script>
+	<script src="adminScript.js"></script>
+
+</body>
+</html>
